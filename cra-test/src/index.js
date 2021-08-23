@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import Button from "./Button";
+import Box from "./Box";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    <Button size="big" />
+    <Button size="small" />
+    <Box size="big" />
+    <Box size="small" />
+  </div>,
   document.getElementById("root")
 );
 
@@ -21,8 +25,8 @@ reportWebVitals();
 //"npm start" => development
 //"npm test" => test
 //"npm run build" => production
-console.log("process.env.NODE_ENV : ", process.env.NODE_ENV);
-console.log("REACT_APP_API_URL : ", process.env.REACT_APP_API_URL);
-console.log("REACT_APP_TEMP1: ", process.env.REACT_APP_TEMP);
+//console.log("process.env.NODE_ENV : ", process.env.NODE_ENV);
+//console.log("REACT_APP_API_URL : ", process.env.REACT_APP_API_URL);
+//console.log("REACT_APP_TEMP1: ", process.env.REACT_APP_TEMP);
 // REACT_APP_*
 // set REACT_APP_API_URL=api.myapp.com npm start
